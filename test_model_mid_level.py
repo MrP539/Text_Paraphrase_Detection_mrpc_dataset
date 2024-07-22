@@ -4,7 +4,7 @@ from transformers import AutoModelForSequenceClassification, BertTokenizer, Trai
 
 from datasets import Dataset
 # 1. โหลดโมเดลและ Tokenizer
-checkpoint_path = r"D:\machine_learning_AI_Builders\บท4\NLP\Text_classification\model"  # ระบุเส้นทางของ checkpoint
+checkpoint_path = r"D:\machine_learning_AI_Builders\บท4\NLP\Paraphrase_Detection\model"  # ระบุเส้นทางของ checkpoint
 model = AutoModelForSequenceClassification.from_pretrained(checkpoint_path)
 tokenizer = AutoTokenizer.from_pretrained(checkpoint_path)
 

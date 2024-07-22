@@ -66,7 +66,7 @@ trainer = transformers.Trainer(
     compute_metrics=compute_metrics
 )
 
-#trainer.train()
+trainer.train()
 
 ###################################################################################### test model on test set ########################################################################################################
 

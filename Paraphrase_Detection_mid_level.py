@@ -12,7 +12,7 @@ import tqdm
 import pandas as pd
 import os
 
-loot_path = r"D:\machine_learning_AI_Builders\บท4\NLP\Text_classification"
+loot_path = r"D:\machine_learning_AI_Builders\บท4\NLP\Paraphrase_Detection"
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 ################################################################################# load & setup dataset ########################################################################################################
@@ -65,7 +65,7 @@ metrics = datasets.load_metric("glue","mrpc")
 
 ############################################################################### set paramiters #################################################################################################
 
-num_epochs = 3
+num_epochs = 1
 num_train_steps = num_epochs * len(train_loader)
 
 
